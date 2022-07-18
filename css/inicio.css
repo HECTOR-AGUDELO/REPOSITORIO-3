@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+}
+
+
+:root {
+  --azul: #34b0be;
+  --rosado: #ff4f6f;
+  --negro: #000000;
+  --gris: #adadad;
+  --gris-claro: #e5e5e5;
+  --blanco: #ffffff;
+}
+
+#icono {
+  width: 50%;
+  margin-top: 110px;
+  margin-left: 10px;
+}
+
+#imagen-menu {
+  margin-top: 22px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  margin: 0 0 5rem 0;
+  height: 60px;
+}
+
+input#menu-portafolio3 {
+  visibility: hidden;
+}
+
+input#menu-portafolio3 ~ ul {
+  background-color: #ffffff;
+  list-style: none;
+  position: absolute;
+  width: 100%;
+  height: calc(100vh - 60px);
+  top: 60px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  z-index: 100;
+}
+
+input#menu-portafolio3:checked ~ ul{
+  display: flex;
+}
+
+input#menu-portafolio3 ~ ul li {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+
+
+.contenedor-dos-columnas {
+  display: flex;
+  width: 100%;
+  height: max-content;
+}
+
+.columna1 {
+  width: 50%;
+  position:relative;
+}
+
+.columna2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.boton-contactame {
+  width: fit-content;
+  height: 3.5rem;
+  padding: 2rem;
+  background-color: var(--rosado);
+  cursor: pointer;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--blanco);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text-contactame {
+  height: 10px;
+  margin: -33px 75px;
+  color: white;
+}
+
+#imagen_azul_fondo {
+  width: 77%;
+}
+
+.fondo_azul{
+   position: relative;
+}
+
+.mi-foto>img{
+  position: absolute;
+  width: 60%;
+  display: flex;
+  object-fit: contain;
+  top:43px;
+  left: 10;
+}
+
+.texto-rosado {
+  color: #ff3f61;
+}
+
+.nombreCarrera {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nombre {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.carrera {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.contenedor-redes-sociales {
+  margin-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  width: 90%;
+
+  border-bottom: 1px solid var(--gris-claro);
+  padding-bottom: 1.5rem;
+}
+
+.div-red-social {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: solid 1px #45b6c3;
+  display: grid;
+  place-items: center;
+}
+
+.servicios {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.acciones-servicios {
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 2.5rem;
+  gap: 3rem;
+  align-items: center;
+}
+
+.titulo-izquierda {
+  color: var(--rosado);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.flechas {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.flecha {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50px;
+}
+
+.flecha-izquierda {
+  background-color: var(--gris);
+}
+
+.flecha-izq{
+  padding-left: .9rem;
+  margin-top: .9rem;
+  color: #adadad;
+}
+
+.flecha-derecha {
+  background-color: var(--rosado);
+}
+
+.flecha-der{
+  padding-left: .9rem;
+  margin-top: .9rem;
+  color: var(--blanco);
+}
+
+.contenedor-tarjetas {
+  height: max-content;
+
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  overflow-y: hidden;
+  margin-top: 1.5rem;
+
+
+  overflow-x: auto;
+  margin-bottom: 2.2rem;
+}
+
+.tarjeta {
+  height: 270px;
+  min-width: 270px;
+  max-width: 270px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  background-color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contenedor-items{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.item{
+  box-shadow: none!important;
+
+}
+
+ .uvm{
+
+  max-height: 70%;
+}
+.Academlo{
+  height:100%;
+    
+  }
+
+.icono-tarjeta {
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p.titulo-tarjeta {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+p.texto-tarjeta {
+  font-size: 14px;
+  color: var(--gris);
+}
+
+.acerca-de-mi{
+
+  position: relative;
+  
+  
+}
+
+.fondo-parrafo{
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 20rem;
+}
+
+.contenedor-parrafo{
+width: 80%;
+}
+
+p.parrafo{
+  margin-top: 2rem;
+  color:var(--gris);
+  line-height: 2;
+  font-size: 18px;
+
+}
+
+.seccion{
+  display: flex;
+  flex-direction: column;
+  padding-left: 2.5rem;
+
+
+}
+
+
+.contenedor-habilidades{
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 3rem;
+
+
+
+}
+
+.habilidad{
+  display: flex;
+  gap: 1.5rem;
+  width: 60%;
+
+}
+
+.tarjeta-porcentaje{
+  
+  height: 6rem;
+  width: 12rem;
+
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  background-color: var(--blanco);
+
+}
+
+.porcentaje-numero{
+  border-top: 10px solid var(--azul) ;
+  height:6rem!important;
+  width: 9rem;
+  display: grid;
+  place-items: center;
+  color:var(--azul);
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.habilidad-texto{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.imagen-tarjeta{
+  width: 100%;
+  
+}
+
+p.imagen-texto{
+  margin: 2.5rem 0 0 1rem !important;
+  text-align: left;
+}
+
+.item-contacto{
+   background-color:#ffffff;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   min-width: 13rem;
+   margin-top: 2rem;
+}
+
+.texto-final{
+  padding: 1.5rem; 
+  text-align: center;
+  color: #34b0be;
+  margin-top: 9rem;
+
+}
+
+
+@media (min-width: 600px) {
+  /* ES DISEÑO PARA PANTALLAS GRANDES */
+  label {
+    display: none;
+  }
+
+  .carrera {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+   input#menu-portafolio3 ~ ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: flex-end;
+  }
+
+ 
+} 
+
+
+
+ ::-webkit-scrollbar {
+  background-color: transparent;
+} 
+
